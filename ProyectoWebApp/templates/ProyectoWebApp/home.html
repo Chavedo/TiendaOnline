@@ -1,0 +1,144 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+  <title>PediOrder</title>
+</head>
+
+
+<!-- Heading -->
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ProyectoWebApp/img/principal.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper">Puntualidad</span>
+          <span class="section-heading-lower">El mejor stock</span>
+        </h2>
+        <p class="mb-3">En la puertra de tu casa en menos de 48 h con el envío normal. En menos de 24 h con el envío express.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Message -->
+<section class="page-section-mg cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Compromiso total</span>
+            <span class="section-heading-lower">Garantizado</span>
+          </h2>
+          <p class="mb-0">Con más de 75 años de experiencia a nuestras espaldas, desde Gestión de Pedidos tenemos los
+            conocimientos y herramientas necesarios para llevar cualquier objeto a la puerta de su casa con puntualidad
+            y profesionalidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Page Content -->
+
+<div class="container ">
+<!-- SUCURSALES CEDE
+  <div class="row">
+    <div class="col-md-8 mb-5">
+      <h2>Sucursales</h2>
+      <hr>
+      <p>Contamos con puntos de distribución en mas de 15 provincias. Ademas de convenios con las principales empresas
+        de
+        mensajeria de Argentina.
+        LLegamos a donde otros no llegan!</p>
+      <a class="btn btn-primary btn-lg" target="_blank"
+        href="https://www.google.com.ar/maps/search/correo/@-35.8183473,-66.3353377,6.79z/data=!4m2!2m1!6e2">Ver mapa
+        &raquo;</a>
+    </div>
+    <div class="col-md-4 mb-5">
+      <h2>Centro Logistica</h2>
+      <hr>
+      <address>
+        <strong>Buenos Aires</strong>
+        <br>3481 Av. Rivadavia
+        <br>Puerto Madero, CA 90210
+        <br>
+      </address>
+      <address>
+        <abbr title="Telefono">T:</abbr>
+        (011) 456-7890
+        <br>
+        <abbr title="Email">E:</abbr>
+        <a href="mailto:#">pediorder@logistica.com</a>
+      </address>
+    </div>
+  </div>
+  <!-- /.row -->
+  
+  <div class="row">
+    <div class="col-md-4 mb-5 ">
+      <div class="card bg-dark text-white">
+        <img class="card-img-top" src="{% static 'ProyectoWebApp/img/office.jpg' %}" alt="">
+        <div class="card-body ">
+          <h4 class="card-title text-warning">UNETE</h4>
+          <p class="card-text">Trabaja con nosotros, somos una de las mejores empresas en brindar calidad laboral.
+            Creemos que los jovenes son el
+            futuro del pais por eso los cuidamos y desarrollamos al maximo sus capacidades.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-warning">Enviar CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card bg-dark text-white ">
+        <img class="card-img-top " src="{% static 'ProyectoWebApp/img/recycle.jpg' %}" alt="">
+        <div class="card-body  ">
+          <h4 class="card-title text-warning">RECICLA</h4>
+          <p class="card-text">En PediOrder somos concientes del problema climatico que afronta nuestro mundo, por eso
+            te invitamos a unirter
+            al programa de sustentabilidad ecologica, donde por cada venta se plantará un arbol!
+          </p>
+        </div>
+        <div class="card-footer ">
+          <a href="#" class="btn btn-warning">Unirme</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card bg-dark text-white">
+        <img class="card-img-top" src="{% static 'ProyectoWebApp/img/facemask.jpg' %}" alt="">
+        <div class="card-body ">
+          <h4 class="card-title text-warning">MEDIDAS</h4>
+          <p class="card-text">Debido a la nueva pandemia que afrontamos en PediOrder tomamos las precauciones
+            necesarias para entregar los productos
+            desinfectados, te invitamos a conocer las medidas de sanitizacion.
+          </p>
+        </div>
+        <div class="card-footer ">
+          <a href="#" class="btn btn-warning">Mirar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+{% endblock %}
+
+</body>
+
+</html>

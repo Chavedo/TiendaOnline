@@ -1,0 +1,31 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+    <title>PediOrder - Contacto</title>
+</head>
+
+<div class="container-form text-center">
+
+    {% if 'valid' in request.GET %}
+    
+    <h1 style="text-align: center; color: black; ">Gracias por contactarte!</h1>
+
+    <a href="/" class="btn btn-warning" >Inicio</a>
+    
+    {% else %}
+
+    <form action="" method="post" style="text-align: left;">
+        {% csrf_token %}
+        <table class="form-contact">{{miFormulario.as_table}}</table>
+        <input type="submit" value="Enviar" class="btncenter">
+        <input type="reset" value="Borrar">
+    </form>
+    {% endif %}
+</div>
+
+
+{%endblock%}
